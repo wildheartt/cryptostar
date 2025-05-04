@@ -11,7 +11,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
+
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
     'prettier'
@@ -40,8 +40,8 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module'
   },
-  parser: '@typescript-eslint/parser',
-  plugins: ['react', '@typescript-eslint', 'jsx-a11y', 'prettier'],
+
+  plugins: ['react', 'jsx-a11y', 'prettier'],
   rules: {
     indent: 'off',
     'template-curly-spacing': 'off',
@@ -81,10 +81,7 @@ module.exports = {
       }
     ],
     'prettier/prettier': 'error',
-    '@typescript-eslint/no-require-imports': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    'no-unused-vars': 'off',
+
     'react/react-in-jsx-scope': 'off',
     'react/display-name': 'off',
     'no-undef': 'off',
@@ -93,7 +90,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
+        extensions: ['.js', '.jsx']
       }
     },
     react: {
@@ -104,12 +101,10 @@ module.exports = {
     '**/__tests__/**',
     '**/*.test.js',
     '**/*.test.jsx',
-    '**/*.test.ts',
-    '**/*.test.tsx',
+
     '**/*.spec.js',
     '**/*.spec.jsx',
-    '**/*.spec.ts',
-    '**/*.spec.tsx',
+
     '**/mocks/**',
     '**/__mocks__/**',
     'jest.setup.js',

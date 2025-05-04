@@ -52,6 +52,7 @@ a:hover {
   display: flex;
   padding: 20px;
   align-items: center;
+  gap: 10px;
   width: 100%;
 }
 .logo {
@@ -59,6 +60,7 @@ a:hover {
 }
 .logo a {
   color: white;
+  font-size: 1.2rem;
 }
 .menu-control-container {
   display: none !important;
@@ -307,6 +309,7 @@ a:hover {
 .news-image-container .img {
   width: 100px;
   height: 100px;
+  margin-right: 10px;
 }
 .news-card p {
   color: black;

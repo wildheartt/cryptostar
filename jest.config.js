@@ -27,7 +27,8 @@ module.exports = {
     '!src/app/store.js',
     '!src/setupTests.js',
     '!src/handlers.js',
-    '!src/server.js'
+    '!src/server.js',
+    'src/App.js'
   ],
   coverageDirectory: 'coverage',
   coverageThreshold: {
@@ -45,6 +46,7 @@ module.exports = {
     'store\\.js$',
     'index\\.js$',
     'setupTests\\.js$',
+    'App\\.js$',
     'server\\.js$',
     'handlers\\.js$'
   ],

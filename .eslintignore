@@ -2,12 +2,8 @@
 **/__tests__/**
 **/*.test.js
 **/*.test.jsx
-**/*.test.ts
-**/*.test.tsx
-**/*.spec.js
-**/*.spec.jsx
-**/*.spec.ts
-**/*.spec.tsx
+
+
 
 .eslintrc.js
 .lintstagedrc.js
@@ -21,4 +17,8 @@ setupTests.js
 
 node_modules/
 build/
-node_modules/
+
+*.d.ts
+
+**/__snapshots__
+*.config.js
