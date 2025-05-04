@@ -10,7 +10,7 @@ export const handlers = [
       rank: i + 1,
       iconUrl: `icon${i + 1}.png`,
       marketCap: `${(i + 1) * 100000}`,
-      change: `${i}`,
+      change: `${i}`
     }));
     return res(ctx.status(200), ctx.json({ data: { coins: fakeCoins } }));
   }),
@@ -23,8 +23,8 @@ export const handlers = [
           total: 3000,
           totalExchanges: 100,
           totalMarketCap: '1500000000000',
-          total24hVolume: '50000000000',
-        },
+          total24hVolume: '50000000000'
+        }
       })
     );
   }),
@@ -43,20 +43,19 @@ export const handlers = [
             marketCap: `${Number(coinId) * 100000}`,
             change: `${coinId}`,
             websiteUrl: 'https://example.com',
-            links: [{ type: 'website', url: 'https://example.com' }],
-          },
-        },
+            links: [{ type: 'website', url: 'https://example.com' }]
+          }
+        }
       })
     );
   }),
 
   rest.get('https://coinranking1.p.rapidapi.com/coin/:coinId/history', (req, res, ctx) => {
     const { coinId } = req.params;
-    const period = req.url.searchParams.get('timePeriod') || '7d';
-    // сгенерим фиктивные точки графика
+
     const history = Array.from({ length: 7 }, (_, i) => ({
       price: `${Number(coinId) * 1000 + i * 10}`,
-      timestamp: Date.now() - i * 24 * 60 * 60 * 1000,
+      timestamp: Date.now() - i * 24 * 60 * 60 * 1000
     }));
     return res(ctx.status(200), ctx.json({ data: { change: '5', history } }));
   }),
@@ -69,7 +68,7 @@ export const handlers = [
       rank: i + 1,
       iconUrl: `exch${i + 1}.png`,
       numberOfMarkets: 100 + i,
-      volume: `${(i + 1) * 10000000}`,
+      volume: `${(i + 1) * 10000000}`
     }));
     return res(ctx.status(200), ctx.json({ data: { stats: {}, exchanges: fakeExchanges } }));
   }),
@@ -85,8 +84,8 @@ export const handlers = [
       publishedAt: new Date(Date.now() - i * 86400000).toISOString(),
       source: {
         name: 'Crypto News',
-        url: 'https://example.com',
-      },
+        url: 'https://example.com'
+      }
     }));
 
     return res(
@@ -103,11 +102,11 @@ export const handlers = [
             links: {
               previous: _start > 0 ? `?limit=${_limit}&start=${_start - _limit}` : null,
               current: `?limit=${_limit}&start=${_start}`,
-              next: _start + _limit < 100 ? `?limit=${_limit}&start=${_start + _limit}` : null,
-            },
-          },
-        },
+              next: _start + _limit < 100 ? `?limit=${_limit}&start=${_start + _limit}` : null
+            }
+          }
+        }
       })
     );
-  }),
+  })
 ];

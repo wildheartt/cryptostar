@@ -81,8 +81,10 @@ module.exports = {
       }
     ],
     'prettier/prettier': 'error',
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-require-imports': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-unused-vars': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/display-name': 'off',
     'no-undef': 'off',

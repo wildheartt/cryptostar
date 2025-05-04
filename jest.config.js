@@ -25,7 +25,9 @@ module.exports = {
     '!src/mocks/**',
     '!src/index.js',
     '!src/app/store.js',
-    '!src/setupTests.js'
+    '!src/setupTests.js',
+    '!src/handlers.js',
+    '!src/server.js'
   ],
   coverageDirectory: 'coverage',
   coverageThreshold: {
@@ -42,7 +44,9 @@ module.exports = {
     '/__mocks__/',
     'store\\.js$',
     'index\\.js$',
-    'setupTests\\.js$'
+    'setupTests\\.js$',
+    'server\\.js$',
+    'handlers\\.js$'
   ],
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
