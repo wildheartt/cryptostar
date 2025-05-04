@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cryptostar/static/css/main.0f7ee452.css",
-    "main.js": "/cryptostar/static/js/main.5454fc93.js",
+    "main.css": "/cryptostar/static/css/main.cbebf798.css",
+    "main.js": "/cryptostar/static/js/main.7c4ed20d.js",
     "static/media/bitcoin.png": "/cryptostar/static/media/bitcoin.641123abea412c5f209f.png",
     "index.html": "/cryptostar/index.html",
-    "main.0f7ee452.css.map": "/cryptostar/static/css/main.0f7ee452.css.map",
-    "main.5454fc93.js.map": "/cryptostar/static/js/main.5454fc93.js.map"
+    "main.cbebf798.css.map": "/cryptostar/static/css/main.cbebf798.css.map",
+    "main.7c4ed20d.js.map": "/cryptostar/static/js/main.7c4ed20d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f7ee452.css",
-    "static/js/main.5454fc93.js"
+    "static/css/main.cbebf798.css",
+    "static/js/main.7c4ed20d.js"
   ]
 }
