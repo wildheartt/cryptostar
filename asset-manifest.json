@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cryptostar/static/css/main.0f7ee452.css",
+    "main.js": "/cryptostar/static/js/main.5454fc93.js",
+    "static/media/bitcoin.png": "/cryptostar/static/media/bitcoin.641123abea412c5f209f.png",
+    "index.html": "/cryptostar/index.html",
+    "main.0f7ee452.css.map": "/cryptostar/static/css/main.0f7ee452.css.map",
+    "main.5454fc93.js.map": "/cryptostar/static/js/main.5454fc93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f7ee452.css",
+    "static/js/main.5454fc93.js"
+  ]
+}
