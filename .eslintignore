@@ -3,7 +3,7 @@
 **/*.test.js
 **/*.test.jsx
 
-
+//adding files to ignore
 
 .eslintrc.js
 .lintstagedrc.js
