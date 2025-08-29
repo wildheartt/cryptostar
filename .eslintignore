@@ -1,0 +1,24 @@
+
+**/__tests__/**
+**/*.test.js
+**/*.test.jsx
+
+//adding files to ignore
+
+.eslintrc.js
+.lintstagedrc.js
+babel.config.js
+jest.config.js
+jest.setup.js
+setupTests.js
+
+**/mocks/**
+**/__mocks__/**
+
+node_modules/
+build/
+
+*.d.ts
+
+**/__snapshots__
+*.config.js
